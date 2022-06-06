@@ -21,7 +21,6 @@ jobs:
           node-version: 14
 
       - name: Build Codeartifact
-        working-directory: ./codeartifact
         shell: bash
         run: |
           npm install
