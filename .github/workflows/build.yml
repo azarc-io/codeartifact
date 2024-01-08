@@ -18,13 +18,17 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: '16'
+          cache: 'yarn'
+          cache-dependency-path: 'yarn.lock'
+        env:
+          FORCE_COLOR: 0
 
       - name: Build Codeartifact
         shell: bash
         run: |
-          npm install
-          npm run package
+          yarn install
+          yarn package
 
       - name: "Update Versions"
         uses: paulhatch/semantic-version@v4.0.3
