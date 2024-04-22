@@ -10,7 +10,7 @@ async function run() {
   const domain = core.getInput('domain', { required: true });
   const owner = core.getInput('owner', { required: true });
   const duration = core.getInput('duration', { required: false });
-  const type = core.getInput('type', { required: true });
+  const type = core.getInput('type', { required: false });
   const repo = core.getInput('repo', { required: true });
   const rcPath = core.getInput('npmrc-output-path', { required: false });
 

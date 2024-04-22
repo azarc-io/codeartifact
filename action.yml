@@ -19,7 +19,7 @@ inputs:
     required: false
   type:
     description: 'CodeArtifact Repository Type. npm or gradle'
-    required: true
+    required: false
   repo:
     description: 'CodeArtifact Repository Name'
     required: true
